@@ -202,6 +202,8 @@ p {
   .main-navigation .nav-container .nav {
     width: 100%;
     justify-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 .main-navigation .nav-container .nav a {
@@ -219,6 +221,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .intro .logo {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -229,6 +236,23 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -252,16 +276,41 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 10px;
+    padding: 18px 18px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    width: 100%;
+  }
+}
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+@media (max-width: 500px) {
+  .home .walk .walk-text p {
+    width: 100%;
+  }
+}
+.home .walk .btn {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -277,20 +326,31 @@ footer {
   font-size: 1.8rem;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .btn {
     width: 100%;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .btn:hover {
   background: white;
   color: #22283a;
   font-color: white;
 }
-.home .walk .walk-img {
+@media (max-width: 500px) {
+  .home .walk .btn {
+    height: 60px;
+  }
+}
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .home .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
