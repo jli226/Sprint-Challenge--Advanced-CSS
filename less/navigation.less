@@ -1,1 +1,51 @@
 // Navigation code here
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: @main-bg;
+  text-align: center;
+
+  .nav-container {
+    height: 100%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+    @media @phone {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+    }
+
+    .logo-heading {
+      line-height: 45px;
+      font-size: 3rem;
+      display: inline;
+      text-align: center;
+
+      @media @phone {
+        font-size: 3rem;
+      }
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      padding-left: 35rem;
+      padding-right: 35rem;
+
+      @media @phone {
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      a {
+        font-size: 1.6rem;
+        color: @font-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
